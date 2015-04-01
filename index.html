@@ -40,6 +40,8 @@
         }
         $(".input-group-addon").html("<strong>" + nickname + "</strong>:");
         socket.emit("join", nickname);
+        var loginMessage = nickname + " has joined the room";
+        socket.emit("messages", loginMessage);
       });
 
       // For updating user list

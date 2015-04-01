@@ -26,7 +26,7 @@ function getDateTime() {
 }
 
 function listAppend(data) {
-  $(".message_container ul").prepend("<li>[" + getDateTime() + "] " + data + "</li>");
+  $(".message_container ul").append("<li>[" + getDateTime() + "] " + data + "</li>");
 }
 
 function updateUserList(data) {
